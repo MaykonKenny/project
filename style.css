@@ -11,6 +11,7 @@ body{
 #switch{
 position: relative;
 margin: 100px auto;
+margin-top: 300px;
 width: 64px;
 }
 #switch button{ 
