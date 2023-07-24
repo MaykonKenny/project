@@ -1,0 +1,79 @@
+:root{
+--bg-color:#292C35;
+}
+.light{
+--bg-color:white;
+}
+body{
+    background: var(--bg-color);
+}
+/* switch */
+#switch{
+position: relative;
+margin: 100px auto;
+width: 64px;
+}
+#switch button{ 
+display: flex;
+width: 24px;
+height: 24px;
+border-radius: 50%;
+border: 0;
+text-align: center;
+background:white ;
+
+position: absolute;
+top: 50%;
+transform: translateY(-52%);
+z-index: 1;
+animation: slide-in 0.4s ;
+}
+#switch span{
+display: flex;
+border-radius: 50px;
+width: 70px;
+height: 27px;
+background: black ;
+
+}
+
+
+.light #switch button{
+    animation: slide-back 0.4s forwards ;
+}
+/* imagens */
+#imagem-1{
+width: 24px;
+height: 24px;
+position: absolute;
+top: 50%;
+transform: translateY(-52%);
+left: 70%;
+}   
+#imagem-2{
+width: 24px;
+height: 24px;
+position: absolute;
+top: 50%;
+transform: translateY(-52%);
+left: 3%;
+}
+/* animations */
+
+@keyframes slide-in{
+from{
+    left:70%;
+}
+to{
+    left:7%;
+}
+}
+@keyframes slide-back{
+from{
+    left: 7%;       
+}
+to{
+    left:70%;
+ }
+}
+
